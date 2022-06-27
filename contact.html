@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Franziska's Portfolio</title>
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+      <!--Add your logo here-->
+      <img src="img/logo_transparent.png" width="200" height="70" alt="" />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="container brackets navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">home</a>
+          </li>
+          <li>
+            <a href="about.html" role="menuitem" class="navigation-list__item">about me</a>
+          </li>
+          <li>
+            <a href="work.html" role="menuitem" class="navigation-list__item">work</a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
+              contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact">
+      <div class="contact-info contact__item">
+        <h1>Contact</h1>
+        Franziska Hammerl
+        <br />
+        Landstr. 158
+        <br />
+        10000 Berlin
+        <br />
+        <br />
+        Tel
+        <a href="tel:+49151000000">+49 151 6880 XXXX</a>
+        <br />
+        Skype
+        <a href="skype:vier4vier">vier4vier</a>
+        <br />
+        <a href="mailto:fran.hammerl@gmail.com">fran.hammerl(at)gmail.com</a>
+        <br />
+        <a href="mailto:fran.hammerl@gmail.com">Contact me</a>
+      </div>
+      <div class="form contact__item">
+        <h1>Leave me a message</h1>
+        <form action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-name">Your name*:</label>
+          <br />
+          <input type="text" id="contact-name" required />
+          <br />
+          <label class="standard-label" for="contact-email">E-Mail*:</label>
+          <br />
+          <input type="email" id="contact-email" required />
+          <br />
+          <label class="standard-label" for="contact-phone">Telephone:</label>
+          <br />
+          <input
+            type="tel"
+            id="contact-phone"
+            pattern="^(?:0|\(?\+49\)?\s?|0049\s?)[1-9](?:[\.\-\s]?\d\d){5}$"
+          />
+          <br />
+          <label class="standard-label" for="contact-message">Your message*:</label>
+          <br />
+          <textarea maxlenght="240" id="contact-message" required></textarea>
+          <br />
+          <span class="max-char">max. 240 characters</span>
+          <br />
+          <input type="submit" value="Send message" class="button" />
+          <br />
+        </form>
+      </div>
+    </main>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+      <br />
+      <p>Find me on</p>
+      <div class="social-media">
+        <img src="img/icon-linkedin.svg" alt="go to my linkedin profile" />
+        <img src="img/icon-github.svg" alt="go to my github profile" />
+        <img src="img/icon-twitter.svg" alt="go to my twitter profile" />
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
