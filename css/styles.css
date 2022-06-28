@@ -88,6 +88,7 @@ button:focus,
 }
 .button2 {
   margin: auto;
+  max-width: 50px;
 }
 .button__secondary {
   background-color: var(--secondary-color);
@@ -134,10 +135,6 @@ button:focus,
 /* --ABOUT--*/
 .hobbies {
   list-style-type: none;
-}
-table {
-  column-width: 150px;
-  margin: auto;
 }
 .about {
   clear: both;
@@ -199,39 +196,41 @@ table {
 }
 /* --CONTACT PAGE-- */
 
-/* --float option for contact page, see grid below-- 
+/*--float option for contact page, see grid below-- */
 .contact-info {
-  float:left;
+  float: left;
   width: 50%;
   text-align: right;
   padding-right: 5%;
-  }
+}
 .form {
   float: right;
   width: 50%;
   padding-left: 5%;
   border-left: 1px solid #fff;
- }
- */
+}
+
 /* --grid design for contact page--*/
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.contact__item {
-  padding: 10px;
-  width: auto;
-  min-height: auto;
-  margin: 0;
-}
-.contact__item:last-child {
-  padding-left: 20px;
-}
-.contact__item:first-child {
-  text-align: right;
-  border-right: 1px solid #fff;
-  padding-right: 30px;
+@supports (display: grid) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .contact__item {
+    padding: 10px;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+  .contact__item:last-child {
+    padding-left: 20px;
+  }
+  .contact__item:first-child {
+    text-align: right;
+    border-right: 1px solid #fff;
+    padding-right: 30px;
+  }
 }
 .max-char {
   font-size: 10px;
@@ -261,7 +260,7 @@ table {
 }
 .navigation-list__item--active {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
 }
 /* Nav. brackets go out  */
 .container a {
