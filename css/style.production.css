@@ -114,7 +114,7 @@ button:focus,
 }
 .button2 {
   margin: auto;
-  max-width: 50px;
+  max-width: 250px;
 }
 .button__secondary {
   background-color: #e0b354;
@@ -177,7 +177,10 @@ button:focus,
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  margin: auto;
+  max-width: 50vw;
 }
+
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;

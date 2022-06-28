@@ -88,7 +88,7 @@ button:focus,
 }
 .button2 {
   margin: auto;
-  max-width: 50px;
+  max-width: 250px;
 }
 .button__secondary {
   background-color: var(--secondary-color);
@@ -141,7 +141,10 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: auto;
+  max-width: 50vw;
 }
+
 @keyframes color-change {
   0% {
     fill: var(--color-sun-0);
