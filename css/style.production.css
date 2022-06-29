@@ -36,11 +36,11 @@ h3 {
   font-weight: 700;
 }
 a {
-  color: white;
+  color: #00ffd0;
 }
 a:visited {
   /*visited link*/
-  color: #00997d;
+  color: #00ffd0;
 }
 a:hover,
 a:focus {

@@ -37,11 +37,11 @@ h3 {
   font-weight: 700;
 }
 a {
-  color: white;
+  color: var(--primary-color);
 }
 a:visited {
   /*visited link*/
-  color: var(--primary-color-dk);
+  color: var(--primary-color);
 }
 a:hover,
 a:focus {
