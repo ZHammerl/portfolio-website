@@ -286,12 +286,15 @@ button:focus,
   float: left;
   width: 50%;
   text-align: right;
-  padding-right: 5%;
+  padding-right: 30px;
+}
+.contact__item:first-child {
+  text-align: right;
 }
 .form {
   float: right;
   width: 50%;
-  padding-left: 5%;
+  padding-left: 30px;
   border-left: 1px solid #fff;
 }
 
@@ -311,18 +314,18 @@ button:focus,
     margin: 0;
   }
   .contact__item:last-child {
-    padding-left: 20px;
+    padding-left: 30px;
+    border-left: 1px solid #fff;
   }
   .contact__item:first-child {
     text-align: right;
-    border-right: 1px solid #fff;
-    padding-right: 30px;
+    padding-right: 20px;
   }
 }
 .max-char {
   font-size: 10px;
   position: relative;
-  top: -15px;
+  top: -8px;
 }
 
 /* --HEADER-- */
