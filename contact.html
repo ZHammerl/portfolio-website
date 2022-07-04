@@ -14,38 +14,38 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
     <div id="page-container">
+      <!-- Header including the logo and the main navigation -->
+      <header class="page-header">
+        <!--Add your logo here-->
+        <img src="img/logo_transparent.png" width="200" height="70" alt="" />
+        <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="container brackets navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item">home</a>
+            </li>
+            <li>
+              <a href="about.html" role="menuitem" class="navigation-list__item">about me</a>
+            </li>
+            <li>
+              <a href="work.html" role="menuitem" class="navigation-list__item">work</a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+              >
+                contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <div id="content-wrap">
-        <!-- Header including the logo and the main navigation -->
-        <header class="page-header">
-          <!--Add your logo here-->
-          <img src="img/logo_transparent.png" width="200" height="70" alt="" />
-          <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="container brackets navigation-list">
-              <li role="presentation">
-                <a href="index.html" role="menuitem" class="navigation-list__item">home</a>
-              </li>
-              <li>
-                <a href="about.html" role="menuitem" class="navigation-list__item">about me</a>
-              </li>
-              <li>
-                <a href="work.html" role="menuitem" class="navigation-list__item">work</a>
-              </li>
-              <li>
-                <a
-                  href="contact.html"
-                  role="menuitem"
-                  class="navigation-list__item navigation-list__item--active"
-                >
-                  contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
         <main class="contact">
           <div class="contact-info contact__item">
             <h1>Contact</h1>
@@ -123,6 +123,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
