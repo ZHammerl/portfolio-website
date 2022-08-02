@@ -267,6 +267,11 @@ button:focus,
   top: -8px;
 }
 
+.error-message {
+  font-size: 10px;
+  color: red;
+}
+
 /* --HEADER-- */
 .page-header {
   display: flex;

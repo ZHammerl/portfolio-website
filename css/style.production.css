@@ -354,6 +354,10 @@ button:focus,
   position: relative;
   top: -8px;
 }
+.error-message {
+  font-size: 13px;
+  color: red;
+}
 
 /* --HEADER-- */
 .page-header {
