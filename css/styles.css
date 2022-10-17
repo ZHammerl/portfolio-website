@@ -182,7 +182,8 @@ button:focus,
   }
 }
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate
+    linear;
 }
 /* -- WORK --*/
 
@@ -295,6 +296,8 @@ button:focus,
 .navigation-list__item--active {
   text-decoration: none;
   font-weight: 900;
+  background-color: var(--primary-color);
+  color: black;
 }
 .main-navigation {
   z-index: 99;
