@@ -1,5 +1,5 @@
-@import "abstracts/abstracts-dir";
-@import "pages/about";
-@import "pages/contact";
-@import "pages/home";
-@import "pages/projects"
+@charset 'utf-8';
+@import "base/_base-dir";
+@import "layouts/_layouts-dir";
+@import "pages/_pages-dir";
+@import "abstracts/_abstracts-dir";
