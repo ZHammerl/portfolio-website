@@ -1,0 +1,13 @@
+.hobbies {
+    padding-left: 0;
+    list-style-position: inside;
+    list-style-type: none;
+  }
+  .about {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70vw;
+  }

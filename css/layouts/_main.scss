@@ -1,0 +1,18 @@
+@import "../abstracts/_abstracts-dir";
+
+body {
+  background-color: $body-background;
+}
+
+main {
+  min-height: 100%;
+  flex: 1;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: justify-all;
+  padding-top: 100px;
+}
+
+.content-wrap {
+  padding-top: 120px;
+}
