@@ -28,6 +28,9 @@
   display: inline-block;
   margin-left: 15px;
 }
+.navigation-list__item {
+  border: 1px solid transparent;
+}
 .navbar_item--active {
   font-weight: 900;
   color: $nav-active;
@@ -53,7 +56,7 @@
 /* Nav. brackets go out  */
 .container a {
   text-decoration: none;
-  margin: 10px 10px;
+  margin: 0px 10px;
   position: relative;
   cursor: pointer;
   font-size: 20px;
