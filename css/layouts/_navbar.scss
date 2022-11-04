@@ -1,0 +1,126 @@
+@import "../abstracts/_abstracts-dir";
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  height: 100px;
+  align-items: center;
+  background-color: $navbar;
+}
+.page-header__item {
+  flex: 0 1 200px;
+}
+.page-header .page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.navigation-list {
+  list-style-type: none;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.navbar_item--active {
+  font-weight: 900;
+  color: $nav-active;
+  background-color: $nav-active-bg;
+  border-radius: 15px;
+}
+
+.navigation-list__item--active {
+  color: $nav-active;
+}
+
+.main-navigation {
+  z-index: 99;
+}
+#hamburger {
+  display: none;
+  color: $hamburger-clr;
+  margin: 0 40px 0 0;
+}
+#toggle {
+  display: none;
+}
+/* Nav. brackets go out  */
+.container a {
+  text-decoration: none;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 10px;
+  z-index: 0;
+}
+.brackets a:before,
+.brackets a:after {
+  position: absolute;
+  opacity: 0;
+  top: 6px;
+  transition: all 0.3s;
+}
+
+.brackets a:before {
+  content: "(";
+  left: 0px;
+  transform: translateX(10px);
+}
+
+.brackets a:after {
+  content: ")";
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+.brackets a:hover:before,
+.brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+@media all and (max-width: 771px) {
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    float: right;
+    margin-right: 0;
+  }
+  .navigation-list {
+    text-align: center;
+    width: 100%;
+    display: none;
+    clear: right;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 10px;
+  }
+  .navigation-list li {
+    display: block;
+    border-bottom: solid 1px $light-blue;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .navbar_item {
+    background-color: $navbar;
+  }
+  .navbar_item--active {
+    background-color: $nav-active-bg;
+  }
+
+  #toggle:checked + .navigation-list {
+    display: block;
+  }
+}

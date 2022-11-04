@@ -13,15 +13,6 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/style.production.css"
-    />
   </head>
   <body>
     <div id="page-container">
@@ -47,7 +38,7 @@
             role="menubar"
             class="container brackets navigation-list"
           >
-            <li role="presentation">
+            <li class="navbar_item" role="presentation">
               <a
                 href="index.html"
                 role="menuitem"
@@ -55,7 +46,7 @@
                 >home</a
               >
             </li>
-            <li>
+            <li class="navbar_item navbar_item--active">
               <a
                 href="about.html"
                 role="menuitem"
@@ -64,7 +55,7 @@
                 about me
               </a>
             </li>
-            <li>
+            <li class="navbar_item">
               <a
                 href="projects.html"
                 role="menuitem"
@@ -72,7 +63,7 @@
                 >projects</a
               >
             </li>
-            <li>
+            <li class="navbar_item">
               <a
                 href="contact.html"
                 role="menuitem"
@@ -83,10 +74,9 @@
           </ul>
         </nav>
       </header>
-      <div id="content-wrap">
         <main>
           <div class="about">
-            <h1>About</h1>
+            <h1>This is me</h1>
             <p>
               Born in Bavaria, I've lived in several
               different countries (Austria, UK, Netherlands,
@@ -94,19 +84,9 @@
               Currently I am studying web development to
               finally do what I enjoy most, solving puzzles.
             </p>
-            <ul class="hobbies">
-              <li>Front-end development</li>
-              <li>Back-end development</li>
-              <li>Enjoying nature</li>
-            </ul>
+     
             <br />
-            <a
-              href="https://www.linkedin.com/in/franziska-hammerl/"
-              target="_blank"
-              class="button button2"
-            >
-              View my profile on Linkedin
-            </a>
+          
           </div>
         </main>
       </div>
@@ -134,14 +114,8 @@
               alt="go to my github profile"
             />
           </a>
-          <img
-            class="social-media__icon"
-            src="img/icons/icon-twitter.svg"
-            alt="go to my twitter profile"
-          />
         </div>
       </footer>
-    </div>
     <!-- <script src="js/tota11y.min.js"></script> -->
     <script src="dist/main.js"></script>
   </body>

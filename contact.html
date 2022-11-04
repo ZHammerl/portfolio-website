@@ -13,15 +13,6 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/style.production.css"
-    />
   </head>
   <body>
     <div id="page-container">
@@ -47,7 +38,7 @@
             role="menubar"
             class="container brackets navigation-list"
           >
-            <li role="presentation">
+            <li class="navbar_item" role="presentation">
               <a
                 href="index.html"
                 role="menuitem"
@@ -55,7 +46,7 @@
                 >home</a
               >
             </li>
-            <li>
+            <li class="navbar_item">
               <a
                 href="about.html"
                 role="menuitem"
@@ -63,7 +54,7 @@
                 >about me</a
               >
             </li>
-            <li>
+            <li class="navbar_item">
               <a
                 href="projects.html"
                 role="menuitem"
@@ -71,7 +62,7 @@
                 >projects</a
               >
             </li>
-            <li>
+            <li class="navbar_item--active navbar_item">
               <a
                 href="contact.html"
                 role="menuitem"
@@ -83,32 +74,29 @@
           </ul>
         </nav>
       </header>
-      <div id="content-wrap">
-        <main class="contact">
-          <div class="contact-info contact__item">
-            <h1>Contact</h1>
-            Franziska Hammerl
-            <br />
-            Köpenicker Landstr. 158
-            <br />
-            112437 Berlin
-            <br />
-            <br />
-            Tel
-            <a href="tel:+49151000000">+49 151 6880 1403</a>
-            <br />
-            Skype
-            <a href="skype:live:vier4vier?chat"
-              >chat via Skype?</a
-            >
-            <br />
-            <a href="mailto:fran.hammerl@gmail.com"
-              >fran.hammerl(at)gmail.com</a
-            >
-            <br />
-          </div>
-          <!--CONTACT FORM-->
-          <!-- <div class="form contact__item">
+      <main class="contact">
+        <div class="contact-info contact__item">
+          <h1>Contact</h1>
+          Franziska Hammerl
+          <br />
+          Berlin
+          <br />
+          <br />
+          Tel
+          <a href="tel:+49151000000">+49 151 6880 1403</a>
+          <br />
+          Skype
+          <a href="skype:live:vier4vier?chat"
+            >chat via Skype?</a
+          >
+          <br />
+          <a href="mailto:fran.hammerl@gmail.com"
+            >fran.hammerl(at)gmail.com</a
+          >
+          <br />
+        </div>
+        <!--CONTACT FORM-->
+        <!-- <div class="form contact__item">
             <h1>Leave me a message</h1>
             <form method="post" id="contact-form">
               <div class="input-wrapper">
@@ -141,8 +129,7 @@
               <br />
             </form>      
            </div>-->
-        </main>
-      </div>
+      </main>
       <!-- Footer with links to social media profiles -->
       <footer id="footer" class="page-footer">
         <p>Find me on</p>
@@ -167,11 +154,6 @@
               alt="go to my github profile"
             />
           </a>
-          <img
-            class="social-media__icon"
-            src="img/icons/icon-twitter.svg"
-            alt="go to my twitter profile"
-          />
         </div>
       </footer>
     </div>

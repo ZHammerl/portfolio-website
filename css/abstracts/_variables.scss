@@ -6,18 +6,30 @@ $font-bold: 700;
 
 // COLORS
 $white: #fff;
-$rich-black: #0B0C10;
+$rich-black: #0b0c10;
 $dark-grey: #1f2833;
 $light-grey: #c5c6c7;
 $light-blue: #66fcf1;
-$dark-blue: #45A29E;
+$dark-blue: #45a29e;
 
 // SEMANTIC COLOR NAMES
 
 $body-background: $rich-black;
 $main-font-clr: $white;
 $link-clr: $light-blue;
-$button-clr: $dark-blue;
-$card-background-clr: $light-grey
+$button-bg-clr: $dark-blue;
+$button-text-clr: $white;
+$button2-bg-clr: $dark-grey;
+$button2-text-clr: $white;
 
+$tag-clr: $dark-blue;
+$card-title: $rich-black;
+$card-background: $light-grey;
+$card-image-bg: $rich-black;
+$card-text: $rich-black;
 
+$navbar: $rich-black;
+$nav-text: $light-blue;
+$nav-active: $rich-black;
+$nav-active-bg: $light-blue;
+$hamburger-clr: $light-blue;

@@ -13,10 +13,6 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
-    />
   </head>
   <body>
     <div id="page-container">
@@ -43,7 +39,7 @@
             role="menubar"
             class="container brackets navigation-list"
           >
-            <li role="presentation">
+            <li class="navbar_item" role="presentation">
               <a
                 href="index.html"
                 role="menuitem"
@@ -51,7 +47,7 @@
                 >home</a
               >
             </li>
-            <li>
+            <li class="navbar_item">
               <a
                 href="about.html"
                 role="menuitem"
@@ -59,7 +55,7 @@
                 >about me</a
               >
             </li>
-            <li>
+            <li class="navbar_item--active navbar_item">
               <a
                 href="projects.html"
                 role="menuitem"
@@ -68,7 +64,7 @@
                 projects
               </a>
             </li>
-            <li>
+            <li class="navbar_item">
               <a
                 href="contact.html"
                 role="menuitem"
@@ -157,10 +153,8 @@
                     <img
                       class="project-icon"
                       src="img/icons/icons8-github.svg"
-                      alt="link to github repository"
-                    />
-                  </a>
-                  <a
+                      alt="link to github repository" /></a
+                  ><a
                     href="https://zhammerl.github.io/cocktail-app/"
                     target="_blank"
                   >
@@ -490,11 +484,6 @@
               alt="go to my github profile"
             />
           </a>
-          <img
-            class="social-media__icon"
-            src="img/icons/icon-twitter.svg"
-            alt="go to my twitter profile"
-          />
         </div>
       </footer>
     </div>

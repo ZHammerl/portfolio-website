@@ -1,13 +1,4 @@
-:root {
-  --text-color: #1f2833;
-  --primary-color: #66fcf1;
-  --primary-color-dk: #45a29e;
-  --secondary-color: #e0b354;
-  --light-grey: #c5c6c7;
-  --color-sun-0: #edc655;
-  --color-sun-50: #fcffad;
-  --color-sun-100: #f76414;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -24,82 +15,10 @@ body {
   margin-bottom: 0;
 }
 
-h1 {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.font-bold {
-  font-weight: 900;
-}
 a {
   color: var(--primary-color);
 }
-a:visited {
-  /*visited link*/
-  color: var(--primary-color);
-}
-a:hover,
-a:focus {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
-}
 
-a:active {
-  /* selected link*/
-  color: var(--primary-color);
-}
-
-button,
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color-dk);
-  color: white;
-  text-decoration: none;
-  /*adds spacing to the button*/
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  /* transition: [transition-duration] [transition-property] [transition-timing-function] [transition-delay]; */
-  transition: 0.2s opacity;
-  flex: 0 0 50px;
-}
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-.button:visited {
-  color: #fff;
-}
-.button2 {
-  margin: auto;
-  max-width: 250px;
-}
-.button__secondary {
-  background-color: var(--secondary-color);
-  color: black;
-}
 
 main {
   min-height: 100%;
@@ -326,137 +245,12 @@ main {
 }
 
 /* --HEADER-- */
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-}
-.page-header__item {
-  flex: 0 1 200px;
-}
-.page-header .page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-.navigation-list {
-  list-style-type: none;
-}
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-}
-.navigation-list__item--active {
-  font-weight: 900;
-  text-decoration: uppercase;
-}
-.main-navigation {
-  z-index: 99;
-}
-#hamburger {
-  display: none;
-  color: var(--primary-color);
-  margin: 0 40px 0 0;
-}
-#toggle {
-  display: none;
-}
-/* Nav. brackets go out  */
-.container a {
-  text-decoration: none;
-  margin: 0px 10px;
-  position: relative;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 10px 10px;
-  z-index: 0;
-}
-.brackets a:before,
-.brackets a:after {
-  position: absolute;
-  opacity: 0;
-  top: 8px;
-  transition: all 0.3s;
-}
 
-.brackets a:before {
-  content: '(';
-  left: 0px;
-  transform: translateX(10px);
-}
 
-.brackets a:after {
-  content: ')';
-  right: 0px;
-  transform: translateX(-10px);
-}
-
-.brackets a:hover:before,
-.brackets a:hover:after {
-  opacity: 1;
-  transform: translateX(0px);
-}
-/* --FOOTER-- */
-
-.social-media a {
-  text-decoration: none;
-}
-
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding: 0 10px 7rem 10px;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 7rem;
-}
 
 @media all and (max-width: 712px) {
   .project-list {
     grid-template-columns: 1fr;
-  }
-  #hamburger {
-    display: block;
-    cursor: pointer;
-    width: 50px;
-    font-size: 30px;
-    font-weight: 700;
-    float: right;
-    margin-right: 0;
-  }
-  .navigation-list {
-    text-align: center;
-    width: 100%;
-    display: none;
-    clear: right;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    padding: 10px;
-  }
-  .navigation-list li {
-    display: block;
-    border-bottom: solid 1px var(--primary-color);
-    margin: 0;
-    color: var(--primary-color);
-    background-color: black;
-    opacity: 90%;
-  }
-  #toggle:checked + .navigation-list {
-    display: block;
   }
 }
 @media all and (min-width: 712px) and (max-width: 792px) {
