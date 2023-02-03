@@ -5,7 +5,9 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack watch"
+    "build": "webpack watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
