@@ -40,16 +40,23 @@
 }
 
 .navbar_item--active {
-  font-weight: 900;
+  font-weight: $font-bolder;
   color: $nav-active;
   background-color: $nav-active-bg;
   border-radius: 15px;
 }
 
-.navigation-list__item--active {
-  color: $nav-active;
+.navigation-list__item {
+  &:hover {
+    font-weight: $font-light;
+  }
+  &--active {
+    color: $nav-active;
+    &:hover {
+      font-weight: $font-bolder;
+    }
+  }
 }
-
 #hamburger {
   display: none;
   color: $hamburger-clr;
