@@ -1,9 +1,5 @@
 @import "../abstracts/_abstracts-dir";
 
-.project-list * {
-  box-sizing: border-box;
-}
-
 .project-list {
   display: grid;
   grid-template-columns: repeat(
@@ -24,22 +20,31 @@
   position: relative;
   justify-content: space-between;
   border: 5px solid $border;
+  color: $card-text;
+
+  &__content {
+    margin-top: 10px;
+    flex: 1;
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 0 15px 0 15px;
+  }
+  &__title {
+    margin: 10px 0;
+  }
+
+  &__image-wrapper {
+    width: 99.5%;
+    height: 230px;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
 }
 
 div.card__content p {
   font-size: 1em;
   line-height: 1.125;
   min-height: 9em;
-}
-
-.card__content {
-  margin-top: 10px;
-  flex: 1;
-  line-height: 1.5;
-  font-size: 0.9em;
-  padding: 0 15px 0 15px;
-  background: $card-background;
-  color: $card-text;
 }
 
 .card__content > p:first-of-type {
@@ -60,16 +65,10 @@ div.card__content p {
   padding-right: 10px;
 }
 
-.card__image-wrapper {
-  width: 99%;
-  height: 230px;
-  margin-bottom: 50px;
-}
-
 .card__image {
   max-width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
   object-fit: contain;
   display: block;
 }
