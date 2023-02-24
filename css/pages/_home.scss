@@ -14,10 +14,6 @@
   border: 5px solid $border;
 }
 
-.social-media__icon {
-  margin-right: 10px;
-}
-
 .about {
   clear: both;
   display: flex;
@@ -52,7 +48,7 @@
     flex-grow: 1;
 
     min-width: 200px;
-    max-width: 675px;
+    max-width: 450px;
     justify-content: center;
     text-align: center;
   }
@@ -72,12 +68,13 @@
   filter: invert(100%);
 }
 
-.work-goals__title {
-  margin-bottom: 0;
-}
-
-.work-goals__subtitle {
-  margin-top: 0;
+.work-goals {
+  &__title {
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    margin-top: 0;
+  }
 }
 
 .employer-attributes {

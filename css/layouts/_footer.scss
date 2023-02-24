@@ -4,6 +4,12 @@
   text-decoration: none;
 }
 
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-footer {
   clear: both;
   display: flex;
@@ -17,12 +23,20 @@
 }
 
 #content-wrap {
-  padding: 0 20px 7rem;
+  padding: 0 20px 9rem;
 }
 
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 7rem;
+  height: 9rem;
+}
+
+.footer__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
