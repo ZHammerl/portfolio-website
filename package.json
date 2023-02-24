@@ -1,18 +1,17 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "homepage": "https://ZHammerl.github.io/portfolio-website",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZHammerl/portfolio-website.git"
-  },
   "description": "",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack watch serve --open",
-    "build": "webpack",
+    "start": "webpack serve --open",
+    "build": "webpack watch",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZHammerl/portfolio-website.git"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +19,7 @@
   "bugs": {
     "url": "https://github.com/ZHammerl/portfolio-website/issues"
   },
+  "homepage": "https://github.com/ZHammerl/portfolio-website#readme",
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
