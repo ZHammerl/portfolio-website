@@ -2,7 +2,6 @@
 
 .page-header {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: 20px;
   margin: 0 0 20px 0;
@@ -14,6 +13,11 @@
   height: 100px;
   align-items: center;
   background-color: $navbar;
+}
+
+.logo {
+  align-self: start;
+  margin-right: 2rem;
 }
 
 .main-navigation {
@@ -99,7 +103,7 @@
   transform: translateX(0px);
 }
 
-@media all and (max-width: 725px) {
+@media all and (max-width: 767px) {
   #hamburger {
     display: block;
     cursor: pointer;

@@ -7,7 +7,12 @@
       content="width=device-width, initial-scale=1"
     />
     <title>Franziska's Portfolio Website</title>
-    <link rel="shortcut icon" href="/img/favicon.png" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="/img/favicon.svg"
+      sizes="32x32"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -18,19 +23,27 @@
     <div id="page-container">
       <!-- Header including the logo and the main navigation -->
       <header class="page-header">
-        <!--Add your logo here-->
         <img
-          class="page-header__item"
-          src="img/logo/logo_transparent.png"
-          width="200"
+          class="logo"
+          src="img/favicon.svg"
           height="70"
           alt=""
         />
+        <a
+          href="/files/Franziska_Hammerl_CV.pdf"
+          class="button cv-button"
+        >
+          <!-- <img
+            class="download-icon"
+            src="/img/icons/download.svg"
+          /> -->
+          Download my CV
+        </a>
         <nav class="main-navigation page-header__item">
           <label
             id="hamburger"
             for="toggle"
-            class="hamburger-icon page-header__item"
+            class="hamburger-icon"
           >
             &#9776;
           </label>
@@ -69,16 +82,6 @@
             </li>
           </ul>
         </nav>
-        <a
-          href="/files/Franziska_Hammerl_CV.pdf"
-          class="button cv-button"
-        >
-          <img
-            class="download-icon"
-            src="/img/icons/download.svg"
-          />
-          CV
-        </a>
       </header>
       <main class="main">
         <section id="content-wrap">
