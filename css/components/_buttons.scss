@@ -1,4 +1,3 @@
-
 button,
 .button {
   /* overwrites browser defaults and resets the border */
@@ -36,4 +35,14 @@ button:focus,
 .button__secondary {
   background-color: $button2-bg-clr;
   color: $button2-text-clr;
+}
+
+.cv-button {
+  width: fit-content;
+  white-space: nowrap;
+}
+
+@media all and (max-width: 440px) {
+  
+  
 }
