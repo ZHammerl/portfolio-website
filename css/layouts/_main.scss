@@ -7,12 +7,18 @@ body {
 main {
   min-height: 100%;
   flex: 1;
-  max-width: 1000px;
+  max-width: 1800px;
   text-align: left;
-  padding-top: 100px;
+  padding: 100px 20px 0px;
   margin: 0 auto;
 }
 
 .content-wrap {
   padding-top: 120px;
+}
+
+@media all and (max-width: 767px) {
+  .main {
+    padding: 100px 25px 0px;
+  }
 }

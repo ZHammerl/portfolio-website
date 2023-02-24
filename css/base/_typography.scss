@@ -3,17 +3,16 @@
 %headers {
   font-family: "Overlock", serif;
   font-weight: $font-bold;
+  text-align: center;
 }
 
 h1 {
   font-size: 40px;
-  text-align: center;
   @extend %headers;
 }
 
 h2 {
   font-size: 36px;
-  text-align: center;
   @extend %headers;
 }
 
