@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Franziska's Portfolio Website</title>
+    <link
+      rel="icon"
+      type="image/svg"
+      href="./img/favicon.svg"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <div id="page-container">
+      <!-- Header including the logo and the main navigation -->
+      <header class="page-header">
+        <img
+          class="logo"
+          src=".img/favicon.svg"
+          height="70"
+          alt=""
+        />
+        <a
+          href="./files/Franziska_Hammerl_CV.pdf"
+          class="button cv-button"
+        >
+          <!-- <img
+            class="download-icon"
+            src="./img/icons/download.svg"
+          /> -->
+          My Resume
+        </a>
+        <nav class="main-navigation page-header__item">
+          <label
+            id="hamburger"
+            for="toggle"
+            class="hamburger-icon"
+          >
+            &#9776;
+          </label>
+          <input id="toggle" type="checkbox" />
+          <ul
+            role="menubar"
+            class="container brackets navigation-list"
+          >
+            <li
+              class="navbar_item--active navbar_item"
+              role="presentation"
+            >
+              <a
+                href="index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item--active"
+              >
+                home
+              </a>
+            </li>
+            <li class="navbar_item">
+              <a
+                href="projects.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >projects</a
+              >
+            </li>
+            <li class="navbar_item">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="profile">
+          <img
+            src=".img/profile/ZHammerl.jpg"
+            class="profile__portrait profile__item"
+            alt="a photo of Franziska"
+          />
+          <div class="profile__item">
+            <h1 class="title">Hello World...</h1>
+            <p>
+              I'm Franziska,
+              <strong>full-stack</strong> web developer with
+              a passion for
+              <strong>process improvements</strong> and
+              <strong>customer service</strong>.
+            </p>
+            <p>
+              Currently, I'm looking for a new challenge,
+              where I can
+              <strong>apply my skills</strong> and
+              <strong>learn</strong> even more.
+            </p>
+            <p>
+              Are you searching for a new team member? Check
+              out my
+              <a href="projects.html">recent projects</a>
+              or take a look at
+              <a
+                href="./files/Franziska_Hammerl_CV.pdf"
+                target="_blank"
+                >my CV</a
+              >.
+            </p>
+            <p>
+              Want to connect? Find me on
+              <a
+                href="https://www.linkedin.com/in/franziska-hammerl/"
+                target="_blank"
+                >linkedin</a
+              >.
+            </p>
+
+            <div class="social-media">
+              <a
+                href="https://www.linkedin.com/in/franziska-hammerl/"
+                target="_blank"
+              >
+                <img
+                  class="social-media__icon icon-home"
+                  src=".img/icons/icon-linkedin.svg"
+                  alt="go to my linkedin profile"
+                />
+              </a>
+              <a
+                href="https://github.com/ZHammerl"
+                target="_blank"
+              >
+                <img
+                  class="social-media__icon icon-home"
+                  src=".img/icons/icon-github.svg"
+                  alt="go to my github profile"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about">
+          <div class="description">
+            <h3 class="about__title">This is me...</h3>
+            <p>
+              ...born in Bavaria, I've lived in several
+              different countries (Austria, Chile, USA, UK,
+              Netherlands, and Mexico) before coming to
+              Berlin. My experience is in a variety of
+              industries and roles, where I've had the
+              opportunity to develop my skills in problem
+              solving, in collaborating with
+              interdisciplinary teams and my analytical
+              skills. For example in my role as Office
+              Manager at a start-up, I was used to figuring
+              out pain points and how to solve them quickly,
+              often in quite creative ways. I've worked in
+              and with people from a variety of cultures,
+              which allowed me to learn how to communicate
+              effectively and without fear.
+              <br />
+              <br />
+              I'm transitioning to software development
+              because this is where I know I can make an
+              even bigger impact, being solution focused and
+              enjoying connecting dots and people.
+              <br />
+              <img
+                src=".img/profile/wandern_mit_Lotti.jpg"
+                class="about__img"
+                alt="a photo of Franziska and her dog 'Lotti'"
+              />
+              <br />
+
+              When I'm not immersed in the coding world I
+              enjoy baking (especially cakes and bread),
+              going on walks with my dog "Lotti"
+              particularly anywhere that's near water and
+              planning for my next big project "Building my
+              own little farmstead in Spain" (I'm happy to
+              tell you more in person).
+            </p>
+          </div>
+          <div class="values">
+            <h2 class="values__title">My values:</h2>
+            <div class="values-wrapper">
+              <div class="values__item value">
+                <img
+                  src=".img/icons/brain.png"
+                  class="value__icon"
+                />
+                <h4 class="value__header">
+                  Being honest and open-minded
+                </h4>
+                <p class="value__description">
+                  I strongly believe that being your
+                  authentic self is the best for everyone.
+                  This way we can bring all our unique
+                  talents and characteristics to the table
+                  and create something awesome. We can learn
+                  something from EVERYONE.
+                </p>
+              </div>
+              <div class="values__item value">
+                <img
+                  src=".img/icons/growth.png"
+                  class="value__icon"
+                />
+                <h4 class="value__header">Owning it</h4>
+                <p class="value__description">
+                  I love to challenge myself and being
+                  challenged. Looking beyond the box is
+                  essential to find an even better and
+                  efficient way of doing things. Everyone
+                  makes mistakes, owning them and learning
+                  from them is how I grow.
+                </p>
+              </div>
+              <div class="values__item value">
+                <img
+                  src=".img/icons/team.png"
+                  class="value__icon"
+                />
+                <h4 class="value__header">Team spirit</h4>
+                <p class="value__description">
+                  Working as a team is how we can create
+                  synergies and momentum to overcome
+                  obstacles. In my opinion being a valuable
+                  addition to a team, however, not only
+                  means being there for your team mates when
+                  they need you, it also means being able to
+                  work independently and carry ones own
+                  weight and also to know when to ask for
+                  help.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-goals">
+          <h3 class="work-goals__title">
+            What I'm looking for...
+          </h3>
+          <h4 class="work-goals__subtitle">
+            aka my employer wish list
+          </h4>
+          <ul class="employer-attributes">
+            <li class="employer-attributes__item">
+              full-time position
+            </li>
+            <li class="employer-attributes__item">
+              remote-first company
+            </li>
+            <li class="employer-attributes__item">
+              buddy / mentor
+            </li>
+            <li class="employer-attributes__item">
+              personal development
+            </li>
+          </ul>
+        </div>
+      </main>
+
+      <!-- Footer with links to social media profiles -->
+      <footer id="footer" class="page-footer">
+        <div class="footer__content-wrapper">
+          <div class="social-media">
+            <span class="call-to-action">Find me on</span>
+            <a
+              href="https://www.linkedin.com/in/franziska-hammerl/"
+              target="_blank"
+            >
+              <img
+                class="social-media__icon"
+                src="./img/icons/icon-linkedin.svg"
+                alt="go to my linkedin profile"
+              />
+            </a>
+            <a
+              href="https://github.com/ZHammerl"
+              target="_blank"
+            >
+              <img
+                class="social-media__icon"
+                src="./img/icons/icon-github.svg"
+                alt="go to my github profile"
+              />
+            </a>
+          </div>
+          <a href="impressum.html" target="_self"
+            >Impressum</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

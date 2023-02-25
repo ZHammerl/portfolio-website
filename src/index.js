@@ -1,3 +1,16 @@
-import "../css/styles.scss";
+require("normalize.css/normalize.css");
+require("../css/styles.scss");
 
-console.log("hello");
+class Foo {
+  constructor() {
+    this.value = "foobar";
+  }
+  static instance() {
+    return new Foo();
+  }
+  getValue() {
+    return this.value;
+  }
+}
+
+console.log(Foo.instance().getValue());
