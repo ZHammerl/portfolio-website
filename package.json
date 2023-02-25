@@ -1,6 +1,7 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
+  "homepage": "https://github.com/ZHammerl/portfolio-website",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
@@ -19,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/ZHammerl/portfolio-website/issues"
   },
-  "homepage": "https://github.com/ZHammerl/portfolio-website#readme",
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
